@@ -1,13 +1,13 @@
-import computer1 from "../../images/computer1.jpg";
-import computer2 from "../../images/computer2.jpg";
-import computer3 from "../../images/computer3.jpg";
+import computer1 from "../../images/computer1.png";
+import computer2 from "../../images/computer2.png";
+import computer3 from "../../images/computer3.png";
 
-import keyboard1 from "../../images/keyboard1.jpg";
-import keyboard2 from "../../images/keyboard2.jpg";
+import keyboard1 from "../../images/keyboard1.png";
+import keyboard2 from "../../images/keyboard2.png";
 import keyboard3 from "../../images/keyboard3.png";
 
 import mouse1 from "../../images/mouse1.jpg";
-import mouse2 from "../../images/mouse2.jpg";
+import mouse2 from "../../images/mouse2.png";
 import mouse3 from "../../images/mouse3.jpg";
 
 export const productDataComputers = [

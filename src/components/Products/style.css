@@ -15,6 +15,10 @@ h3.dark {
   color: white;
 }
 
-.dark {
+section.dark {
   background: rgb(14, 14, 14);
+}
+
+img.dark {
+  background: white;
 }

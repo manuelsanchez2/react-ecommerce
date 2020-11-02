@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProductsContainer = styled.div`
+export const ProductsContainer = styled.section`
   width: 100vw;
   min-height: 100vh;
   padding: 4rem calc((100vw - 1300px) / 2);
@@ -17,6 +17,10 @@ export const ProductCard = styled.div`
   margin: 0 2rem;
   line-height: 2;
   width: 300px;
+
+  @media screen and (max-width: 1050px) {
+    margin: 1.3rem 2rem;
+  }
 `;
 
 export const ProductImg = styled.img`
