@@ -43,4 +43,9 @@ export const NavIcon = styled.div`
 export const Bars = styled(TiDeviceLaptop)`
   font-size: 2rem;
   transform: translate(-50%, -15%);
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    font-size: 2.25rem;
+  }
 `;
