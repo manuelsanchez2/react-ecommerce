@@ -4,8 +4,6 @@ export const ProductsContainer = styled.div`
   width: 100vw;
   min-height: 100vh;
   padding: 4rem calc((100vw - 1300px) / 2);
-
-  color: white;
 `;
 
 export const ProductsWrapper = styled.div`
@@ -26,24 +24,25 @@ export const ProductImg = styled.img`
   min-width: 300px;
   border-radius: 20px;
   max-width: 100%;
-  box-shadow: 8px 8px #430c02;
   transition: 0.5s ease-out;
+  box-shadow: 6px 6px gray;
 
   &:hover {
-    transform: scale(1.05);
-    filter: grayscale(90%);
-    box-shadow: 8px 8px #484848;
+    transform: scale(1.03);
+    filter: grayscale(95%);
+    box-shadow: 7px 7px #484848;
   }
 `;
 
 export const ProductsHeading = styled.h2`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  padding-top: 0;
 `;
 
 export const ProductTitle = styled.h3`
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.5rem;
 `;
 
@@ -55,6 +54,7 @@ export const ProductInfo = styled.div`
   padding: 2rem;
   text-align: center;
   color: white;
+  margin-top: 1rem;
 `;
 
 export const ProductDesc = styled.p`
@@ -77,9 +77,8 @@ export const ProductButton = styled.button`
   border-radius: 25px;
 
   &:hover {
-    background: #ffc500;
+    transform: scale(1.03);
     transition: 0.5s ease-out;
     cursor: pointer;
-    color: #000;
   }
 `;

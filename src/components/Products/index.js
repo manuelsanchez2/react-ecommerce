@@ -17,7 +17,9 @@ import {
 const Products = ({ heading, data, dark }) => {
   return (
     <ProductsContainer className={dark ? "normal" : "dark"}>
-      <ProductsHeading>{heading}</ProductsHeading>
+      <ProductsHeading className={dark ? "normal" : "dark"}>
+        {heading}
+      </ProductsHeading>
       <ProductsWrapper>
         {data.map((product, index) => {
           return (
@@ -28,9 +30,15 @@ const Products = ({ heading, data, dark }) => {
                 alt={product.alt}
               />
               <ProductInfo className={dark ? "normal" : "dark"}>
-                <ProductTitle>{product.name}</ProductTitle>
-                <ProductDesc>{product.desc}</ProductDesc>
-                <ProductPrice>{product.price}</ProductPrice>
+                <ProductTitle className={dark ? "normal" : "dark"}>
+                  {product.name}
+                </ProductTitle>
+                <ProductDesc className={dark ? "normal" : "dark"}>
+                  {product.desc}
+                </ProductDesc>
+                <ProductPrice className={dark ? "normal" : "dark"}>
+                  {product.price}
+                </ProductPrice>
                 <ProductButton>{product.button}</ProductButton>
               </ProductInfo>
             </ProductCard>

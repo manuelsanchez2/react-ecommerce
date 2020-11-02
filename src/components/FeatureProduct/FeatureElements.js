@@ -6,6 +6,7 @@ export const FeatureContainer = styled.div`
     url(${FeaturePic});
   height: 100vh;
   max-height: 500px;
+  width: 100vw;
   background-position: center;
   background-size: cover;
   display: flex;

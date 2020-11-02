@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
-  background-color: #0d0909;
+  background-color: white;
+  width: 100vw;
 `;
 
 export const FooterWrap = styled.div`
@@ -33,7 +34,7 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled(Link)`
-  color: #fff;
+  color: #484848;
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
@@ -52,6 +53,6 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-  color: #fff;
+  color: #484848;
   font-size: 24px;
 `;

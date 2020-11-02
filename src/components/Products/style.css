@@ -1,12 +1,20 @@
-.normal {
-  background: #eee;
-  color: black;
+p.normal,
+h2.normal,
+h3.normal {
+  color: #484848;
+}
 
-  box-shadow: 8px 8px gray;
+div.normal,
+div.dark {
+  box-shadow: 6px 6px gray;
+}
+
+p.dark,
+h2.dark,
+h3.dark {
+  color: white;
 }
 
 .dark {
   background: rgb(14, 14, 14);
-
-  box-shadow: 8px 8px gray;
 }
