@@ -24,7 +24,7 @@ export const HeroItems = styled.div`
   align-items: flex-start;
   height: 100vh;
   max-height: 100%;
-  padding: 0 4rem;
+  padding: 0 3rem;
   width: 650px;
   color: #fff;
   text-transform: uppercase;
@@ -43,7 +43,7 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroP = styled.p`
-  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-size: clamp(1.8rem, 2.3vw, 2.8rem);
   margin-bottom: 2rem;
 `;
 
