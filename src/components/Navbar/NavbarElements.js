@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
-import { FaAppleAlt } from "react-icons/fa";
+// import { FaAppleAlt } from "react-icons/fa";
+import { TiDeviceLaptop } from "react-icons/ti";
 
 export const Nav = styled.nav`
-  background: #ffce00;
+  background: #4d4d51;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -39,7 +40,7 @@ export const NavIcon = styled.div`
   }
 `;
 
-export const Bars = styled(FaAppleAlt)`
+export const Bars = styled(TiDeviceLaptop)`
   font-size: 2rem;
   transform: translate(-50%, -15%);
 `;
