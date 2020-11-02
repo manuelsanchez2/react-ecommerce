@@ -1,4 +1,6 @@
 import React from "react";
+import "./style.css";
+
 import {
   ProductsContainer,
   ProductsHeading,
@@ -12,19 +14,31 @@ import {
   ProductButton,
 } from "./ProductsElements";
 
-const Products = ({ heading, data }) => {
+const Products = ({ heading, data, dark }) => {
   return (
-    <ProductsContainer>
-      <ProductsHeading>{heading}</ProductsHeading>
+    <ProductsContainer className={dark ? "normal" : "dark"}>
+      <ProductsHeading className={dark ? "normal" : "dark"}>
+        {heading}
+      </ProductsHeading>
       <ProductsWrapper>
         {data.map((product, index) => {
           return (
             <ProductCard key={index}>
-              <ProductImg src={product.img} alt={product.alt} />
-              <ProductInfo>
-                <ProductTitle>{product.name}</ProductTitle>
-                <ProductDesc>{product.desc}</ProductDesc>
-                <ProductPrice>{product.price}</ProductPrice>
+              <ProductImg
+                className={dark ? "normal" : "dark"}
+                src={product.img}
+                alt={product.alt}
+              />
+              <ProductInfo className={dark ? "normal" : "dark"}>
+                <ProductTitle className={dark ? "normal" : "dark"}>
+                  {product.name}
+                </ProductTitle>
+                <ProductDesc className={dark ? "normal" : "dark"}>
+                  {product.desc}
+                </ProductDesc>
+                <ProductPrice className={dark ? "normal" : "dark"}>
+                  {product.price}
+                </ProductPrice>
                 <ProductButton>{product.button}</ProductButton>
               </ProductInfo>
             </ProductCard>
