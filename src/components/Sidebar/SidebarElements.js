@@ -33,6 +33,11 @@ export const Icon = styled.div`
   font-size: 2rem;
   cursor: pointer;
   outline: none;
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 export const SidebarMenu = styled.div`
@@ -59,6 +64,7 @@ export const SidebarLink = styled(Link)`
 
   &:hover {
     color: #ddd;
+    transform: scale(1.1);
     transition: 0.2s ease-in-out;
   }
 `;
@@ -84,8 +90,7 @@ export const SidebarRoute = styled(Link)`
 
   &:hover {
     transition: 0.5s ease-in-out;
-    background: black;
-    color: red;
-    border: solid 2px white;
+    background: red;
+    color: white;
   }
 `;
