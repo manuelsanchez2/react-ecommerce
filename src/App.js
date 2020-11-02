@@ -11,7 +11,7 @@ import {
 import Feature from "./components/FeatureProduct";
 import Footer from "./components/Footer";
 
-function App() {
+function App({ dark }) {
   return (
     <Router>
       <GlobalStyle />
@@ -21,7 +21,11 @@ function App() {
         data={productDataComputers}
       />
       <Feature />
-      <Products heading="How fast can you type?" data={productDataKeyboards} />
+      <Products
+        dark
+        heading="How fast can you type?"
+        data={productDataKeyboards}
+      />
       <Products heading="Choose the perfect Mouse" data={productDataMice} />
       <Footer />
     </Router>

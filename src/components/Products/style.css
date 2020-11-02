@@ -1,0 +1,12 @@
+.normal {
+  background: #eee;
+  color: black;
+
+  box-shadow: 8px 8px gray;
+}
+
+.dark {
+  background: rgb(14, 14, 14);
+
+  box-shadow: 8px 8px gray;
+}

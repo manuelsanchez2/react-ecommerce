@@ -1,4 +1,6 @@
 import React from "react";
+import "./style.css";
+
 import {
   ProductsContainer,
   ProductsHeading,
@@ -12,16 +14,20 @@ import {
   ProductButton,
 } from "./ProductsElements";
 
-const Products = ({ heading, data }) => {
+const Products = ({ heading, data, dark }) => {
   return (
-    <ProductsContainer>
+    <ProductsContainer className={dark ? "normal" : "dark"}>
       <ProductsHeading>{heading}</ProductsHeading>
       <ProductsWrapper>
         {data.map((product, index) => {
           return (
             <ProductCard key={index}>
-              <ProductImg src={product.img} alt={product.alt} />
-              <ProductInfo>
+              <ProductImg
+                className={dark ? "normal" : "dark"}
+                src={product.img}
+                alt={product.alt}
+              />
+              <ProductInfo className={dark ? "normal" : "dark"}>
                 <ProductTitle>{product.name}</ProductTitle>
                 <ProductDesc>{product.desc}</ProductDesc>
                 <ProductPrice>{product.price}</ProductPrice>

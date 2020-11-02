@@ -4,7 +4,7 @@ export const ProductsContainer = styled.div`
   width: 100vw;
   min-height: 100vh;
   padding: 4rem calc((100vw - 1300px) / 2);
-  background: #150f0f;
+
   color: white;
 `;
 
@@ -24,6 +24,7 @@ export const ProductCard = styled.div`
 export const ProductImg = styled.img`
   height: 300px;
   min-width: 300px;
+  border-radius: 20px;
   max-width: 100%;
   box-shadow: 8px 8px #430c02;
   transition: 0.5s ease-out;
@@ -31,6 +32,7 @@ export const ProductImg = styled.img`
   &:hover {
     transform: scale(1.05);
     filter: grayscale(90%);
+    box-shadow: 8px 8px #484848;
   }
 `;
 
