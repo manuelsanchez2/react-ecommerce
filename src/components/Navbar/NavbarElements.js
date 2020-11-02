@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
-// import { FaAppleAlt } from "react-icons/fa";
 import { TiDeviceLaptop } from "react-icons/ti";
 
 export const Nav = styled.nav`
-  background: #4d4d51;
+  /* background: #4d4d51; */
+  background: transparent;
   height: 80px;
   display: flex;
   justify-content: center;

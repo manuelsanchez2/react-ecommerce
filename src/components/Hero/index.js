@@ -1,10 +1,12 @@
 import React from "react";
+import Navbar from "../Navbar";
+import { HeroContainer } from "./HeroElements";
 
 const Hero = () => {
   return (
-    <div>
-      <h1>I will never be your hero</h1>
-    </div>
+    <HeroContainer>
+      <Navbar />
+    </HeroContainer>
   );
 };
 
