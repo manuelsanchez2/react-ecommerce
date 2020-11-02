@@ -9,10 +9,10 @@ import {
   SidebarRoute,
 } from "./SidebarElements";
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, handler }) => {
   return (
-    <SidebarContainer>
-      <Icon>
+    <SidebarContainer isOpen={isOpen} onClick={handler}>
+      <Icon onClick={handler}>
         <CloseIcon />
       </Icon>
       <SidebarMenu>

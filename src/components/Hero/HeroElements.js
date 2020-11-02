@@ -7,7 +7,6 @@ export const HeroContainer = styled.div`
   height: 100vh;
   background-position: center;
   background-size: cover;
-  filter: grayscale(90%);
 `;
 
 export const HeroContent = styled.div`
@@ -58,7 +57,7 @@ export const HeroBtn = styled.button`
   border-radius: 25px;
 
   &:hover {
-    background: #484848;
+    background: red;
     transition: 0.5s ease-out;
     cursor: pointer;
     color: #fff;
