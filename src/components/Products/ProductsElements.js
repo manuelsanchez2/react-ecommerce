@@ -1,4 +1,3 @@
-import { FaCentercode } from "react-icons/fa";
 import styled from "styled-components";
 
 export const ProductsContainer = styled.div`

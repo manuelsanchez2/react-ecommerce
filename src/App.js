@@ -9,6 +9,7 @@ import {
   productDataMice,
 } from "./components/Products/data";
 import Feature from "./components/FeatureProduct";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Feature />
       <Products heading="How fast can you type?" data={productDataKeyboards} />
       <Products heading="Choose the perfect Mouse" data={productDataMice} />
+      <Footer />
     </Router>
   );
 }
